@@ -4,10 +4,10 @@
 
 #NECESSARY JOB SPECIFICATIONS
 #SBATCH --job-name=pauc       #Set the job name 
-#SBATCH --time=4:00:00        #Set the wall clock limit to 4hrs 
-#SBATCH --ntasks-per-node=4              
-#SBATCH --nodes=4
-#SBATCH --mem=64gb            #Request 64GB Memory per node
+#SBATCH --time=5:00:00        #Set the wall clock limit to 4hrs 
+#SBATCH --ntasks-per-node=16              
+#SBATCH --nodes=1
+#SBATCH --mem=16gb            #Request 16GB Memory per node
 #SBATCH --output=pauc.%j      #stdout/err 
 #SBATCH --gres=gpu:1          #Request 1 GPU per node 
 #SBATCH --partition=gpu       #Request the GPU partition/queue

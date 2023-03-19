@@ -16,7 +16,7 @@ from sklearn.cluster import KMeans
 from sklearn import metrics
 import pandas as pd
 import random
-from noise import AddGaussianNoise
+from utils import AddGaussianNoise
 torch.backends.cudnn.deterministic=True
 torch.backends.cudnn.benchmark=False
 
